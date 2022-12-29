@@ -5,8 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(12, 95, 18);
+        }
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .card{
+            border: 1px solid black;
+            background-color: black;
+            transition: 300ms ease-in-out;
+            height: 400px;
+            width: 225px;
+            border-radius: 13px;
+            box-shadow: 5px 5px;
+        }
+        .card:hover{
+            transform: rotate(-4deg);
+        }
+        .card:hover ~ .card{
+            z-index: 1;
+            translate: 60px;
+        }
+        .cr1{
+            position:absolute;
+            top:100px;
+            left: 200px;
+        }
+        .cr2{
+            left:350px;
+            top:120px;                        
+            position:absolute;
+
+        }
+        .cr3{
+            left: 500px;
+            top:140px;
+            position:absolute;
+
+        }
+        .cr4{
+            left: 650px;
+            top:160px;
+            position:absolute;
+
+        }
+        .cr5{
+            left: 800px;
+            top:180px;
+            position:absolute;
+
+        }
+        img{
+            height: 400px;
+            width: 225px;
+            border-radius: 13px;
+        }
+    </style>
 </head>
 <body>
-    <h1>my page</h1>
+    <div class="container">
+        <div class="card cr1"><img src="./img/Antique French Lady Playing Cards/AntiqueHeartsKing_WingsofWhimsy.png" alt=""></div>
+        <div class="card cr2"> <img src="./img/Antique French Lady Playing Cards/AntiqueSpadesQueen_WingsofWhimsy.png" alt=""></div>
+        <div class="card cr3"> <img src="./img/Antique French Lady Playing Cards/AntiqueClubsAce_WingsofWhimsy.png" alt=""></div>
+        <div class="card cr4"> <img src="./img/Antique French Lady Playing Cards/AntiqueDiamondsKnight_WingsofWhimsy.png" alt=""></div>
+        <div class="card cr5"> <img src="img/Antique French Lady Playing Cards/AntiqueBlackJoker_WingsofWhimsy.png" alt=""></div>
+    </div>
 </body>
 </html>
