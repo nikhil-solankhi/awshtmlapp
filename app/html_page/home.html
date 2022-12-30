@@ -1,85 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
         }
-        body{
+
+        body {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: rgb(12, 95, 18);
+            background-color: rgba(59, 196, 241, 0.688);
         }
-        .container{
+
+        .container {
             display: flex;
             gap: 10px;
         }
-        .card{
+
+        .card {
             border: 1px solid black;
-            background-color: black;
+            background-color: white;
             transition: 300ms ease-in-out;
             height: 400px;
             width: 225px;
             border-radius: 13px;
             box-shadow: 5px 5px;
+            justify-content: center;
+            text-align: center;
+            font-family: cursive;
         }
-        .card:hover{
+
+        .card:hover {
             transform: rotate(-4deg);
         }
-        .card:hover ~ .card{
+
+        .card:hover~.card {
             z-index: 1;
             translate: 60px;
         }
-        .cr1{
-            position:absolute;
-            top:100px;
+
+        .cr1 {
+            position: absolute;
+            top: 100px;
             left: 200px;
         }
-        .cr2{
-            left:350px;
-            top:120px;                        
-            position:absolute;
+
+        .cr2 {
+            left: 350px;
+            top: 120px;
+            position: absolute;
 
         }
-        .cr3{
+
+        .cr3 {
             left: 500px;
-            top:140px;
-            position:absolute;
+            top: 140px;
+            position: absolute;
 
         }
-        .cr4{
+
+        .cr4 {
             left: 650px;
-            top:160px;
-            position:absolute;
+            top: 160px;
+            position: absolute;
 
         }
-        .cr5{
+
+        .cr5 {
             left: 800px;
-            top:180px;
-            position:absolute;
+            top: 180px;
+            position: absolute;
 
         }
-        img{
+
+        img {
             height: 400px;
             width: 225px;
             border-radius: 13px;
         }
     </style>
 </head>
+
 <body>
+
     <div class="container">
-        <div class="card cr1"><img src="./img/Antique French Lady Playing Cards/AntiqueHeartsKing_WingsofWhimsy.png" alt=""></div>
-        <div class="card cr2"> <img src="./img/Antique French Lady Playing Cards/AntiqueSpadesQueen_WingsofWhimsy.png" alt=""></div>
-        <div class="card cr3"> <img src="./img/Antique French Lady Playing Cards/AntiqueClubsAce_WingsofWhimsy.png" alt=""></div>
-        <div class="card cr4"> <img src="./img/Antique French Lady Playing Cards/AntiqueDiamondsKnight_WingsofWhimsy.png" alt=""></div>
-        <div class="card cr5"> <img src="img/Antique French Lady Playing Cards/AntiqueBlackJoker_WingsofWhimsy.png" alt=""></div>
+        <div class="card cr1">
+            <h1>I</h1><br>touch here <br> <br><br><br>
+            <h2>hi! welcome to my first node application deploy on aws cloud</h2>
+        </div>
+        <div class="card cr2">
+            <h1>A</h1><br>touch here
+        </div>
+        <div class="card cr3">
+            <h1>C</h1><br>touch here
+        </div>
+        <div class="card cr4">
+            <h1>S</h1><br>touch here
+        </div>
+        <div class="card cr5">
+            <h1>D</h1><br>touch here <br> <br><br><br>
+            <h2>created by </h2>
+            <h2><br> nikhil solankhi</h2>
+        </div>
     </div>
+
 </body>
+
 </html>
